@@ -4,49 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ondulando</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <a href="#" class="logo">
-            <img src="./img/logo.png" alt="Logo">
-        </a>
-        <nav class="nav-item">
-            <a href="#">Início</a>
-            <a href="#">Recomendado</a>
-            <div>
-                <span>Pesquisar</span>
-            </div>
+
+        <div>
+            <a href="#"><img src="./img/logo.png" width="300px" height="80px" alt="Logo do site"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Recomendado</a></li>
+            </ul>
         </nav>
-        <div class="nav-item">
+        <div>
             <a href="#">Entrar</a>
         </div>
+
     </header>
 
     <main>
-        <div>
+
+        <section class="top">
             <h1>Todos os artigos</h1>
-        </div>
-        <div class="artigos">
-            <div class="artigo">
-                <img src="./img/backgroud.webp" alt="background">
-                <div class="conteudo-artigo">
-                    <div>
-                        <h2>Título</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt repellat eligendi id mollitia neque, odit quis deserunt recusandae sunt impedit magni cum corrupti numquam consectetur repellendus placeat fuga vero quibusdam?</p>
-                    </div>
-                    <div class="base-artigo">
-                        <p>Por: Marcelo F. Costa em 25 de março de 2025</p>
-                        <div class="botoes">
-                            <a href="#" id="excluir">EXCLUIR</a>
-                            <a href="#" id="editar">EDITAR</a>
-                            <a href="#">VER MAIS</a>
-                        </div>
+            <div class="input-icon">
+                <input type="text" placeholder="Pesquisar artigos">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#66ABD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+        </section>
+
+        <section class="articles">
+
+            <div class="article">
+                <img src="img/Group 51.jpg" alt="Foto do artigo.">
+                <div class="article-content">
+                    <h2>Título</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptates corrupti minima quas? Quas ex nihil quo minima laudantium? Ducimus explicabo tempore nihil vitae dolor, a omnis itaque quam quibusdam.</p>
+                    <div class="article-info">
+                        <span>Por: Fulando de tal em 28 de março de 2025</span>
+                        <a href="#">Ver mais</a>
                     </div>
                 </div>
             </div>
-        </div>
+
+        </section>
+
     </main>
 </body>
 </html>

@@ -4,135 +4,158 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat';
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
+    padding: 1em 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-header .logo img {
-    width: 144px;
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2em;
 }
 
-.nav-item a, .nav-item span {
-    padding: 1rem;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1rem;
-    font-weight: 500;
-    text-transform: lowercase;
-    cursor: pointer;
+header a {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
 }
 
-.nav-item a:hover, .nav-item span:hover {
+header a:hover {
     color: #66ABD4;
 }
 
-header nav {
-    display: flex;
-    align-items: center;
+a {
+    text-decoration: none;
+    color: #000;
 }
 
 main {
-    padding: 1.5rem;
-    margin-top: 1.5rem;
+    padding: 4em;
 }
 
-main h1 {
-    font-weight: 600;
-}
-
-main .artigos .artigo {
-    margin-top: 2rem;
-    display: flex;
-}
-
-main .artigos .artigo img {
-    width: 248px;
-    margin-right: 1.5rem;
-}
-
-main .artigos .artigo .conteudo-artigo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-main .artigos .artigo .conteudo-artigo p {
-    text-align: justify;
-}
-
-main .artigos .artigo .base-artigo {
+main .top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main .artigos .artigo .botoes {
-    display: flex;
-    gap: 1rem;
+main .top h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-main .artigos .artigo .botoes a {
+main .top input {
+    padding: .5em 3em .5em 1em;
     border: 1px solid #66ABD4;
-    background-color: transparent;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    color: #66ABD4;
-
-    transition: all .1s ease-in;
+    border-radius: 16px;
+    font-size: 1rem;
+    outline: none;
 }
 
-main .artigos .artigo .botoes a {
-    color: #66ABD4;
-    text-decoration: none;
+.input-icon {
+    position: relative;
 }
 
-main .artigos .artigo .botoes a:hover {
-    background-color: #66ABD4;
-    color: white;
+.input-icon svg {
+    position: absolute;
+    top: .4em;
+    right: 1em;
+    cursor: pointer;
 }
 
-#excluir { 
-    color: red;
-    border-color: red;
+.articles {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
 }
 
-#excluir:hover { 
-    color: white;
-    background-color: red;
+.article {
+    display: flex;
+    gap: 2em;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-    }
+.article img {
+    width: 100%;
+    max-width: 355px;
+    border-radius: 16px;
+}
 
-    main h1 {
-        text-align: center;
-    }
+.article h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-    main .artigos .artigo {
+.article .article-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.article .article-content p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.article .article-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .article-info span {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.article .article-info a {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 0.75em;
+    text-decoration-color: #66ABD4;
+}
+
+@media screen and (max-width: 1228px) {
+
+    .article {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
     }
+}
 
-    main .artigos .artigo h2 {
-        text-align: center;
-    }
+@media screen and (max-width: 900px) {
 
-    main .artigos .artigo .conteudo-artigo {
-        gap: 1rem;
-    }
-
-    main .artigos .artigo .base-artigo {
+    header {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2em;
+    }
+
+    main .top {
+        flex-direction: column;
+        gap: 2em;
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 612px) {
+
+    .article-info {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    main .top h1 {
+        text-align: center;
     }
 }
