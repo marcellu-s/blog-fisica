@@ -23,7 +23,7 @@ header ul {
 }
 
 header a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 
@@ -47,7 +47,7 @@ main .top {
 }
 
 main .top h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -89,7 +89,7 @@ main .top input {
 }
 
 .article h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -101,7 +101,7 @@ main .top input {
 }
 
 .article .article-content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: justify;
 }
 
@@ -116,7 +116,7 @@ main .top input {
 }
 
 .article .article-info a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: underline;
     text-underline-offset: 0.75em;
     text-decoration-color: #66ABD4;
