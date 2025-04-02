@@ -119,6 +119,8 @@ main .top h1 {
 
 .content-list {
     padding: 0 4em;
+
+    margin: 1em 0;
 }
 
 .comments {
@@ -201,6 +203,40 @@ main .top h1 {
     border: 1px solid #66ABD4;
 }
 
+.content-img {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.25em;
+}
+
+.content-img img {
+    max-width: 450px;
+}
+
+.content-img span {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.content-img span a:hover {
+    text-decoration: underline;
+}
+
+.content-table { 
+    border-collapse: collapse;  
+
+    margin: 1em auto 0 auto;
+}
+
+.content-table th, .content-table td {
+    border: 1px solid black;
+    padding: 0.25em;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .top-section {
