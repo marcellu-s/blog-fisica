@@ -104,6 +104,104 @@ main .top h1 {
     margin-top: 4em;
 }
 
+.content-text, .content-subtitle {
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+.content-text {
+    text-align: justify;
+}
+
+.content-subtitle {
+    font-size: 1.5rem;
+}
+
+.content-list {
+    padding: 0 4em;
+}
+
+.comments {
+    margin-top: 4em;
+}
+
+.comment {
+    margin-top: 4em;
+    font-size: 1rem;
+}
+
+.comment-name-user {
+    font-weight: 500;
+}
+
+.comment-user {
+    margin: 2em 0 1.5em 0;
+    text-align: justify;
+}
+
+.comment-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-date {
+    font-weight: 300;
+}
+
+.comment-reply {
+    font-weight: 500; 
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: .25em;
+}
+
+.send-comment {
+    margin-top: 4em;
+    padding: 2em;
+    border: 1px solid #66ABD4;
+    border-radius: 16px;
+}
+
+.input-control {
+    display: flex;
+    gap: 4em;
+    align-items: center;
+
+    margin-bottom: 2em;
+}
+
+.input-control input, .send-comment textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #66ABD4;
+    padding: .5em 1.5em;
+    border-radius: 16px;
+}
+
+.send-comment input[type="button"] {
+    display: block;
+    margin: 2em auto 0 auto;
+
+    border: 1px solid transparent;
+    background-color: #66ABD4;
+    border-radius: 16px;
+    padding: .5em 1.5em;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+
+    transition: all 0.2s ease-out;
+}
+
+.send-comment input[type="button"]:hover {
+    background-color: #fff;
+    color: #66ABD4;
+    border: 1px solid #66ABD4;
+}
+
+
 @media screen and (max-width: 768px) {
     .top-section {
         flex-direction: column;
@@ -121,5 +219,16 @@ main .top h1 {
 
     .play-audio-container {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .send-comment {
+        padding: 1em;
+    }
+
+    .input-control {
+        flex-direction: column;
+        gap: 1em;
     }
 }
