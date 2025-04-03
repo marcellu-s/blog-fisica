@@ -119,7 +119,7 @@ main .top h1 {
 
 .content-list {
     padding: 0 4em;
-
+    text-align: justify;
     margin: 1em 0;
 }
 
@@ -209,12 +209,13 @@ main .top h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     gap: 0.25em;
 }
 
 .content-img img {
-    max-width: 450px;
+    width: 100%;
+    max-width: 355px;
+    max-height: 226px;
 }
 
 .content-img span {
@@ -266,5 +267,9 @@ main .top h1 {
     .input-control {
         flex-direction: column;
         gap: 1em;
+    }
+
+    .content-list {
+        padding: 0;
     }
 }
