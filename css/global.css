@@ -14,6 +14,12 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    background-color: white;
+
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 header ul {
@@ -157,6 +163,17 @@ main .top h1 {
         flex-direction: column;
         gap: 2em;
         justify-content: start;
+    }
+}
+
+@media screen and (max-width: 678px) {
+
+    main {
+        padding: 2em;
+    }
+
+    .text-formula {
+        overflow-x: scroll;
     }
 }
 
