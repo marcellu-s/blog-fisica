@@ -17,7 +17,7 @@ Este projeto tem como objetivo desenvolver uma página web estática que expliqu
 1. Clone o repositório:
 
 ```bash
-   git clone https://github.com/seu-usuario/blog-fisica.git
+   git clone https://github.com/marcellu-s/blog-fisica.git
 ```
 
 2. Navegue até a pasta do projeto:
