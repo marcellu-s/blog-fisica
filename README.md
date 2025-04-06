@@ -27,3 +27,7 @@ Este projeto tem como objetivo desenvolver uma página web estática que expliqu
 ```
 
 3. Abra o arquivo **index.html** em um navegador para visualizar a página.
+
+# Deploy
+
+<a href="https://marcellu-s.github.io/blog-fisica/" target="_blank">Clique aqui para acessar o site</a>
