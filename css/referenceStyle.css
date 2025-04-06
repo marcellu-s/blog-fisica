@@ -1,0 +1,24 @@
+.content-section {
+    margin-top: 4em;
+}
+
+.text-reference, .content-subtitle {
+    font-size: 1rem;
+    margin: 1em 0;
+}
+
+.text-reference {
+    text-align: justify;
+}
+
+.content-subtitle {
+    font-size: 1.5rem;
+}
+
+.text-reference a {
+    color: #66ABD4;
+}
+
+.text-reference a:hover {
+    text-decoration: underline;
+}

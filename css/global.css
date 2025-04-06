@@ -24,8 +24,12 @@ header {
 
 header ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 2em;
+
+    flex-wrap: wrap;
 }
 
 header a {
@@ -144,6 +148,10 @@ main .top h1 {
     font-size: 1.5rem;
 }
 
+footer {
+    padding: 0 4em 4em 4em;
+}
+
 @media screen and (max-width: 1228px) {
 
     .article {
@@ -174,6 +182,10 @@ main .top h1 {
 
     .text-formula {
         overflow-x: scroll;
+    }
+
+    footer {
+        padding: 0 4em 4em 4em;
     }
 }
 
