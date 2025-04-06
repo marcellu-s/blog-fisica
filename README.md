@@ -30,4 +30,4 @@ Este projeto tem como objetivo desenvolver uma página web estática que expliqu
 
 # Deploy
 
-[Clique aqui para acessar o site](https://marcellu-s.github.io/blog-fisica/)
+<a href="https://marcellu-s.github.io/blog-fisica/" target="_blank">Clique aqui para acessar o site</a>
