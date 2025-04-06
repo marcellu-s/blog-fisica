@@ -9,6 +9,8 @@
 
 .text-reference {
     text-align: justify;
+
+    overflow-wrap: break-word;
 }
 
 .content-subtitle {
@@ -17,8 +19,20 @@
 
 .text-reference a {
     color: #66ABD4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    display: inline-block;
 }
 
 .text-reference a:hover {
     text-decoration: underline;
+}
+
+.text-reference a {
+    color: #66ABD4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    display: inline-block;
 }
